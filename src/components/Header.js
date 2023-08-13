@@ -1,15 +1,18 @@
 import React from 'react';
-import '../styles/skeleton.css'
 
 // ABOUT ME, PORTFOLIO, CONTACT, RESUME
 
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
-function NavTabs({ currentPage, handlePageChange }) {
+function Header({ currentPage, handlePageChange }) {
   return (
-    <div className="row">
-      <div className="button two columns">
+    <nav className='navbar navbar-expand-sm navbar-dark bg-dark'>
+    <ul className="navbar-nav w-100 justify-content-around">
+      <li className="nav-item">
+        <p className="navbar-brand"><u>Michael O'Sullivan</u></p>
+      </li>
+      <li className="nav-item">
         <a
           href="#home"
           onClick={() => handlePageChange('Home')}
@@ -19,8 +22,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         >
           Home
         </a>
-      </div>
-      <div className="button two columns">
+      </li>
+      <li className="nav-item">
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
@@ -29,8 +32,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         >
           About
         </a>
-      </div>
-      <div className="button two columns">
+      </li>
+      <li className="nav-item">
         <a
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
@@ -39,8 +42,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         >
           Portfolio
         </a>
-      </div>
-      <div className="button two columns">
+      </li>
+      <li className="nav-item">
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
@@ -49,8 +52,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         >
           Contact
         </a>
-      </div>
-      <div className="button two columns">
+      </li>
+      <li className="nav-item">
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
@@ -59,9 +62,10 @@ function NavTabs({ currentPage, handlePageChange }) {
         >
           Resume
         </a>
-      </div>
-    </div>
+      </li>
+    </ul>
+    </nav>
   );
 }
 
-export default NavTabs;
+export default Header;
