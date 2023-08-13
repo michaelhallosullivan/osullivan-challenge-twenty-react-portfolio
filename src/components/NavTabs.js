@@ -1,11 +1,15 @@
 import React from 'react';
+import '../styles/skeleton.css'
+
+// ABOUT ME, PORTFOLIO, CONTACT, RESUME
+
 
 // Here we are using object destructuring assignment to pluck off our variables from the props object
 // We assign them to their own variable names
 function NavTabs({ currentPage, handlePageChange }) {
   return (
-    <ul className="nav nav-tabs">
-      <li className="nav-item">
+    <div className="row">
+      <div className="button two columns">
         <a
           href="#home"
           onClick={() => handlePageChange('Home')}
@@ -15,8 +19,8 @@ function NavTabs({ currentPage, handlePageChange }) {
         >
           Home
         </a>
-      </li>
-      <li className="nav-item">
+      </div>
+      <div className="button two columns">
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
@@ -25,18 +29,18 @@ function NavTabs({ currentPage, handlePageChange }) {
         >
           About
         </a>
-      </li>
-      <li className="nav-item">
+      </div>
+      <div className="button two columns">
         <a
-          href="#blog"
-          onClick={() => handlePageChange('Blog')}
+          href="#portfolio"
+          onClick={() => handlePageChange('Portfolio')}
           // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
-          className={currentPage === 'Blog' ? 'nav-link active' : 'nav-link'}
+          className={currentPage === 'Portfolio' ? 'nav-link active' : 'nav-link'}
         >
-          Blog
+          Portfolio
         </a>
-      </li>
-      <li className="nav-item">
+      </div>
+      <div className="button two columns">
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
@@ -45,8 +49,18 @@ function NavTabs({ currentPage, handlePageChange }) {
         >
           Contact
         </a>
-      </li>
-    </ul>
+      </div>
+      <div className="button two columns">
+        <a
+          href="#resume"
+          onClick={() => handlePageChange('Resume')}
+          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
+          className={currentPage === 'Resume' ? 'nav-link active' : 'nav-link'}
+        >
+          Resume
+        </a>
+      </div>
+    </div>
   );
 }
 
