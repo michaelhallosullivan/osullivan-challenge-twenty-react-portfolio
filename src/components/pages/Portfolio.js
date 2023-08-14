@@ -1,26 +1,61 @@
 import React from 'react';
 
-// titled images of six of the developer’s applications with links to both the deployed applications and the corresponding GitHub repository
-
 export default function Portfolio() {
+  const projects = [
+    {
+      title: "Movie Finder",
+      img: "./assets/images/project1.png",
+      github: "https://github.com/michaelhallosullivan/osullivan-project-one-trailer-finder",
+      deployed: "https://michaelhallosullivan.github.io/osullivan-project-one-trailer-finder/"
+    },
+    {
+      title: "Minecraft Guide",
+      img: "./assets/images/minecraft-screenshot.png",
+      github: "https://github.com/Corey-Carpenter/minecraft-crafting-recipe-guide",
+      deployed: "https://minecraft-crafting-recipes-b8ba8c8afeec.herokuapp.com/api/users/login"
+    },
+    {
+      title: "Password Generator",
+      img: "./assets/images/password-generator.jpg",
+      github: "https://github.com/michaelhallosullivan/osullivan-challenge-three-password-generator",
+      deployed: "https://michaelhallosullivan.github.io/osullivan-challenge-three-password-generator/"
+    },
+    {
+      title: "Note Taker",
+      img: "./assets/images/note-taker.jpg",
+      github: "https://github.com/michaelhallosullivan/osullivan-challenge-eleven-note-taker",
+      deployed: "https://challenge-eleven-note-taker.herokuapp.com/"
+    },
+    {
+      title: "Scheduler",
+      img: "./assets/images/scheduler-screenshot.jpg",
+      github: "https://github.com/michaelhallosullivan/osullivan-challenge-five-scheduler",
+      deployed: "https://michaelhallosullivan.github.io/osullivan-challenge-five-scheduler/"
+    },  
+    {
+      title: "LOTR Quiz",
+      img: "./assets/images/challenge-four-screenshot.jpg",
+      github: "https://github.com/michaelhallosullivan/osullivan-challenge-four-lotr-quiz",
+      deployed: "https://michaelhallosullivan.github.io/osullivan-challenge-four-lotr-quiz/"
+    }
+  ];
+
+  const projectCard = projects.map((project) => 
+        <div class="col-4 p-5">
+            <p class="display-6 text-center">{project.title}</p>
+            <img class="rounded img-fluid" src={project.img}/>
+            <div class="pt-3 d-flex justify-content-around">
+              <a class="col-3 btn btn-dark" href={project.github}>Github</a>
+              <a class="col-3 btn btn-dark" href={project.deployed}>Deployed</a>
+            </div>
+        </div>
+      );
+
   return (
-    <div>
-      <h1>Portfolio Page</h1>
-      <p>
-        Donec a volutpat quam. Curabitur nec varius justo, sed rutrum ligula.
-        Curabitur pellentesque turpis sit amet eros iaculis, a mollis arcu
-        dictum. Ut vel ante eget massa ornare placerat. Etiam nisl orci, finibus
-        sodales volutpat et, hendrerit ut dolor. Suspendisse porta dictum nunc,
-        sed pretium risus rutrum eget. Nam consequat, ligula in faucibus
-        vestibulum, nisi justo laoreet risus, luctus luctus mi lacus sit amet
-        libero. Class aptent taciti sociosqu ad litora torquent per conubia
-        nostra, per inceptos himenaeos. Mauris pretium condimentum tellus eget
-        lobortis. Interdum et malesuada fames ac ante ipsum primis in faucibus.
-        Donec placerat accumsan mi, ut congue neque placerat eu. Donec nec ipsum
-        in velit pellentesque vehicula sit amet at augue. Maecenas aliquam
-        bibendum congue. Pellentesque semper, lectus non ullamcorper iaculis,
-        est ligula suscipit velit, sed bibendum turpis dui in sapien.
-      </p>
-    </div>
+    <section class="p-5 bg-secondary">
+      <div class="row">
+        {projectCard}
+      </div>
+    </section>
   );
 }
