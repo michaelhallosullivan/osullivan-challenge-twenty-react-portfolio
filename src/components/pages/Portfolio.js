@@ -43,10 +43,10 @@ export default function Portfolio() {
   const projectCard = projects.map((project) => 
         <div class="col-4 p-5">
             <p class="display-6 text-center">{project.title}</p>
-            <img class="rounded img-fluid" src={project.img}/>
+            <img class="rounded border border-dark img-fluid" src={project.img}/>
             <div class="pt-3 d-flex justify-content-around">
-              <a class="col-3 btn btn-dark" href={project.github}>Github</a>
-              <a class="col-3 btn btn-dark" href={project.deployed}>Deployed</a>
+              <a class="p-2 col-3 btn btn-dark" role="button" href={project.github}>Github</a>
+              <a class="p-2 col-3 btn btn-dark" role="button" href={project.deployed}>Deployed</a>
             </div>
         </div>
       );

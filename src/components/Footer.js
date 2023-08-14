@@ -11,6 +11,9 @@ function Footer() {
           <a class="btn btn-outline-light m-2" href="https://github.com/michaelhallosullivan" role="button">
             <i class="fab fa-github"></i>
           </a>
+          <a class="btn btn-outline-light m-2" href="https://steamcommunity.com/profiles/76561198002751511/" role="button">
+            <i class="fab fa-steam"></i>
+          </a>
         </section>
       </div>
     </footer>

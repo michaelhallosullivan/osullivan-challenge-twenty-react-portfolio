@@ -3,7 +3,7 @@ import React from 'react';
 export default function Resume() {
   return (
     <section class="p-5 bg-secondary">
-      <div class="p-5 pt-3">
+      <div class="px-5 pt-3">
       <h1 class="display-6">Selected Coding Proficiencies</h1>
       <ul class="m-3">
         <li>HTML</li>
