@@ -17,7 +17,6 @@ function Header({ currentPage, handlePageChange }) {
         <a
           href="#about"
           onClick={() => handlePageChange('About')}
-          // Check to see if the currentPage is `About`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className={currentPage === 'About' ? 'active btn btn-danger' : 'btn btn-outline-light'}
         >
           About
@@ -27,7 +26,6 @@ function Header({ currentPage, handlePageChange }) {
         <a
           href="#portfolio"
           onClick={() => handlePageChange('Portfolio')}
-          // Check to see if the currentPage is `Blog`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className={currentPage === 'Portfolio' ? 'active btn btn-danger' : 'btn btn-outline-light'}
         >
           Portfolio
@@ -37,17 +35,15 @@ function Header({ currentPage, handlePageChange }) {
         <a
           href="#resume"
           onClick={() => handlePageChange('Resume')}
-          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className={currentPage === 'Resume' ? 'active btn btn-danger' : 'btn btn-outline-light'}
         >
-          Resume
+          Resumé
         </a>
       </li>
       <li className="nav-item">
         <a
           href="#contact"
           onClick={() => handlePageChange('Contact')}
-          // Check to see if the currentPage is `Contact`, and if so we use the active link class from bootstrap. Otherwise, we set it to a normal nav-link
           className={currentPage === 'Contact' ? 'active btn btn-danger' : 'btn btn-outline-light'}
         >
           Contact
