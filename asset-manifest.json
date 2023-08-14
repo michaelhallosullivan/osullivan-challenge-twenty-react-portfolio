@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/osullivan-challenge-twenty-react-portfolio/static/css/main.7a1dc574.css",
+    "main.js": "/osullivan-challenge-twenty-react-portfolio/static/js/main.6b582d97.js",
+    "index.html": "/osullivan-challenge-twenty-react-portfolio/index.html",
+    "main.7a1dc574.css.map": "/osullivan-challenge-twenty-react-portfolio/static/css/main.7a1dc574.css.map",
+    "main.6b582d97.js.map": "/osullivan-challenge-twenty-react-portfolio/static/js/main.6b582d97.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7a1dc574.css",
+    "static/js/main.6b582d97.js"
+  ]
+}
