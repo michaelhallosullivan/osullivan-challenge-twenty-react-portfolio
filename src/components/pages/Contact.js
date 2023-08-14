@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function Contact() {
   return (
-  <section class="p-5 bg-secondary">
+  <section class="p-5 bg-2">
     <p class="h1-responsive display-4 font-weight-bold text-center my-4">Contact</p>
     <p class="text-center w-responsive">Any inquiries about my skillset or potential career oppportunities? Feel free to contact me with the form below!</p>
     <div class="row mb-5">

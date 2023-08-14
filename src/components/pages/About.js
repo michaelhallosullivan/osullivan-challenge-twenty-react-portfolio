@@ -2,7 +2,7 @@ import React from 'react';
 
 export default function About() {
   return (
-    <section class="p-5 bg-secondary">
+    <section class="p-5 bg-2">
       <div class="py-1 row">
         <div class="p-4 col-4">
           <img class="rounded border border-dark img-fluid" src="./assets/images/profile.jpg"/>

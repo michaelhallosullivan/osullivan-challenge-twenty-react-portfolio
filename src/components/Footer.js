@@ -2,7 +2,7 @@ import React from 'react';
 
 function Footer() {
   return (
-    <footer class="bg-dark text-center text-white">
+    <footer class="bg-1 text-center text-white">
       <div class="container p-4">
         <section class="mb-4">
           <a class="btn btn-outline-light m-2" href="http://www.linkedin.com/in/michael-o-sullivan-a523a079" role="button">

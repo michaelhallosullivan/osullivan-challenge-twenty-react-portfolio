@@ -1,8 +1,9 @@
 import React from 'react';
+import '../styles/color.css';
 
 function Header({ currentPage, handlePageChange }) {
   return (
-    <nav className='navbar navbar-expand-sm navbar-dark bg-dark'>
+    <nav className='navbar navbar-expand-sm navbar-dark bg-1'>
     <div class="container p-4">
       <div className="nav-item">
         <h1 className="display-5 text-light me-4 text-nowrap">Michael O'Sullivan</h1>
