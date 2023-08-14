@@ -1,22 +1,35 @@
 import React from 'react';
 
+// contact form with fields for a name, an email address, and a message
+// make send button work
+
 export default function Contact() {
   return (
-    <div>
-      <h1>Contact Page</h1>
-      <p>
-        Integer cursus bibendum sem non pretium. Vestibulum in aliquet sem, quis
-        molestie urna. Aliquam semper ultrices varius. Aliquam faucibus sit amet
-        magna a ultrices. Aenean pellentesque placerat lacus imperdiet
-        efficitur. In felis nisl, luctus non ante euismod, tincidunt bibendum
-        mi. In a molestie nisl, eu sodales diam. Nam tincidunt lacus quis magna
-        posuere, eget tristique dui dapibus. Maecenas fermentum elementum
-        faucibus. Quisque nec metus vestibulum, egestas massa eu, sollicitudin
-        ipsum. Nulla facilisi. Sed ut erat ligula. Nam tincidunt nunc in nibh
-        dictum ullamcorper. Class aptent taciti sociosqu ad litora torquent per
-        conubia nostra, per inceptos himenaeos. Etiam ornare rutrum felis at
-        rhoncus. Etiam vel condimentum magna, quis tempor nulla.
-      </p>
+  <section class="p-5 bg-secondary">
+    <p class="h1-responsive display-4 font-weight-bold text-center my-4">Contact</p>
+    <p class="text-center w-responsive">Any inquiries about my skillset or potential career oppportunities? Feel free to contact me with the form below!</p>
+
+    <div class="row mb-5">
+        <form id="contact-form" name="contact-form" action="mail.php" method="POST">
+          <div class="form-group">
+            <input type="text" class="form-control my-4" id="formGroupExampleInput" placeholder="First name"/>
+          </div>
+          <div class="form-group">
+            <input type="text" class="form-control my-4" id="formGroupExampleInput2" placeholder="Last name"/>
+          </div>
+          <div class="form-group">
+            <input type="email" class="form-control my-4" id="formGroupExampleInput2" placeholder="name@domainname.com"/>
+          </div>
+          <div class="form-group">
+            <textarea type="text" class="form-control my-4" rows="6" id="formGroupExampleInput2" placeholder="Enter a message for me here!"/>
+          </div>
+          <div class="text-center text-md-left">
+              <button type="submit" class="btn btn-dark">Send</button>
+          </div>
+        </form>
     </div>
+
+</section>
+
   );
 }
