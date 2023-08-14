@@ -1,10 +1,5 @@
 import React from 'react';
 
-// ABOUT ME, PORTFOLIO, CONTACT, RESUME
-
-
-// Here we are using object destructuring assignment to pluck off our variables from the props object
-// We assign them to their own variable names
 function Header({ currentPage, handlePageChange }) {
   return (
     <nav className='navbar navbar-expand-sm navbar-dark bg-dark'>
