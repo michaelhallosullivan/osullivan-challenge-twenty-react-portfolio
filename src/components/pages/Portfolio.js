@@ -52,7 +52,7 @@ export default function Portfolio() {
       );
 
   return (
-    <section class="p-5 bg-secondary">
+    <section class="p-5 bg-2">
       <div class="row">
         {projectCard}
       </div>
