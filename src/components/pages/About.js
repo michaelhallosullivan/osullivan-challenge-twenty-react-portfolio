@@ -1,5 +1,7 @@
 import React from 'react';
 
+// recent photo or avatar of the developer and a short bio about them
+
 export default function About() {
   return (
     <div>
