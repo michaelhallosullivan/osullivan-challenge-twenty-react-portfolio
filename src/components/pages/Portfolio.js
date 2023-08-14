@@ -4,13 +4,13 @@ export default function Portfolio() {
   const projects = [
     {
       title: "Movie Finder",
-      img: "./assets/images/project1.png",
+      img: "./assets/images/trailer-screenshot.jpg",
       github: "https://github.com/michaelhallosullivan/osullivan-project-one-trailer-finder",
       deployed: "https://michaelhallosullivan.github.io/osullivan-project-one-trailer-finder/"
     },
     {
       title: "Minecraft Guide",
-      img: "./assets/images/minecraft-screenshot.png",
+      img: "./assets/images/minecraft-screenshot.jpg",
       github: "https://github.com/Corey-Carpenter/minecraft-crafting-recipe-guide",
       deployed: "https://minecraft-crafting-recipes-b8ba8c8afeec.herokuapp.com/api/users/login"
     },
