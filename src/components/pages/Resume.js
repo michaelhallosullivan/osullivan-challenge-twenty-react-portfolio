@@ -19,7 +19,7 @@ export default function Resume() {
       </div>
       <div class="px-5">
       <h1 class="display-6">Resumé</h1>
-      <a class="btn btn-danger m-4 p-2" href="/assets/resume.pdf" download="resume">
+      <a class="btn btn-danger m-4 p-2" href="./assets/resume.pdf" download="resume">
       Download
       </a>
       </div>
