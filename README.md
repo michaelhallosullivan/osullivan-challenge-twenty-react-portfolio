@@ -54,4 +54,5 @@ Used Node.js (https://nodejs.org/en), React (https://legacy.reactjs.org/), Font 
 
 MIT License
 
-![Model](https://github.com/michaelhallosullivan/osullivan-challenge-eighteen-social-network/blob/main/assets/images/challenge-twenty-screenshot.jpg)
+![Model](https://github.com/michaelhallosullivan/osullivan-challenge-twenty-react-portfolio/blob/main/public/assets/images/challenge-twenty-screenshot.jpg)
+
